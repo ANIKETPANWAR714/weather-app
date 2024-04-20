@@ -15,6 +15,14 @@ const WeatherApp = () =>
 {
     let api_key = "ad4c11d205e9a38640764b6948181d77";
     const [wicon,setwicon] = useState(cloud_icon);
+
+    const handleKeyPress = (event) => {
+        if (event.key === 'Enter') {
+            search();
+        }
+    };
+
+
     const search = async () =>{
         const element = document.getElementsByClassName("cityInput")
         if(element[0].value == "")
@@ -80,12 +88,14 @@ const WeatherApp = () =>
         }
 
 
+      
+
     }
     return (
 
         <div className='container'>
             <div className="top-bar">
-                <input type="text" className="cityInput" placeholder="search"/>
+                <input type="text" className="cityInput" placeholder="search" onKeyPress={handleKeyPress}/>
                 <div className="search-icon" onClick={()=>search()}>
                     <img src={search_icon} alt="" />
                 </div>
