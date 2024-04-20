@@ -4,7 +4,10 @@
     margin: auto;
     margin-top: 80px;
     border-radius: 15px;
-    background-image: linear-gradient(180deg, #3aaee8 0%,#452bd5 100%);
+    background-image: linear-gradient(180deg, #3aaee8 0%,#d134aa 100%);
+    font-style: italic;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
 }
 .top-bar{
     display: flex;
@@ -80,4 +83,27 @@
     margin-top: 10px;
 
 
+}
+@media screen and (max-width: 900px) {
+    .container {
+        padding: 10px;
+    }
+    
+    .top-bar {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .cityInput {
+        margin-bottom: 10px;
+    }
+
+    .search-icon {
+        padding: 0;
+        margin-left: auto;
+    }
+
+    .data-container {
+        flex-direction: column;
+    }
 }
