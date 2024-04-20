@@ -1,89 +1,74 @@
-.container{
-    width: 620px;
-    height: 800px;
-    margin: auto;
-    margin-top: 80px;
+/* WeatherApp.css */
+
+.container {
+    width: 100%;
+    max-width: 600px; /* Adjust the max-width as needed */
+    margin: 0 auto;
+    padding: 20px;
     border-radius: 15px;
-    background-image: linear-gradient(180deg, #3aaee8 0%,#d134aa 100%);
+    background-image: linear-gradient(180deg, #6ec6f3 0%,#283ee9 100%);
     font-style: italic;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    
-}
-.top-bar{
-    display: flex;
-    justify-content: center;
-    gap: 14px;
-    padding-top: 60px;
 
 }
-.top-bar input{
-    display: flex;
-    width: 362px;
-    height: 78px;
-    background:#ebfffc;
-    border: none;
-    outline: none;
-    border-radius: 40px;
-    padding-left: 40px;
-    color: #626262;
-    font-size: 25px;
-    font-weight: 500;
-}
 
-.search-icon{
+.top-bar {
     display: flex;
-    justify-content: center;
     align-items: center;
-    width: 78px;
-    height: 78px;
-    background:#ebfffc;
-    border-radius: 45px;
+    margin-bottom: 20px;
 }
-.weather-image{
-    margin-top: 30px;
-    display: flex;
-    justify-content: center;
-}
-.weather-temp{
-    display: flex;
-    justify-content: center;
-    color: white;
-    font-size: 125px;
-    font-weight: 400px;
-}
-.weather-location{
-    display: flex;
-    justify-content: center;
-    color: white;
-    font-size: 60px;
-    font-weight: 400;
-}
-.data-container{
-    margin-top: 50px;
-    display: flex;
-    justify-content: center;
-    color: white;
-}
-.element{
-    margin: auto;
-    display: flex;
-    gap: 12px;
-    align-items: flex-start;
-}
-.data{
-    font-size: 34px;
-    font-weight: 400;
-}
-.text{
-    font-size: 20px;
-    font-weight: 400;
 
+.cityInput {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
 }
-.icon{
-    margin-top: 10px;
 
-
+.search-icon {
+    padding: 0 10px;
+    cursor: pointer;
 }
+
+.weather-image {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.weather-temp {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.weather-location {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.data-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.element {
+    flex: 1;
+    text-align: center;
+}
+
+.icon {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.data {
+    font-size: 16px;
+}
+
+/* Media Query for screens smaller than 900px */
 @media screen and (max-width: 900px) {
     .container {
         padding: 10px;
